@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Newpaper.html">
+    <title>NewsWebsite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="websitelogo1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav>
+        <!-- Inside the nav section, before the main-nav div -->
+        <div class="explorer" onclick="toggleExplorerOptions()">
+            
+            <div>
+            <i class="fa-solid fa-list" style="color: white; font-size: 30px; margin-left: 50px; margin-top: 5px;"></i>
+
+            </div>
+
+
+        </div>
+        <div class="explorer-options" id="explorerOptions" style="margin-left: 50px; margin-top: 30px; ">
+            <!-- Add your explorer options here -->
+            <div class="hover-link nav-item"onclick="onNavItemClick('India')">India</div>
+            <div class="hover-link nav-item"onclick="onNavItemClick('world')">World</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('technology')">Technology</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('science')">Science</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('world')">World</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('music')">Music</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('dance')">Dance</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('education')">Education</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('sports')">Sports</div>
+            <div class="hover-link nav-item" onclick="onNavItemClick('indian-politics')">Politics</div>
+
+        </div>
+
+        <div class="main-nav container flex">
+
+            <div class="ani">
+                <div class="main-animation">
+                    <a href="index.html"><h4> News-Website<div class="roller">
+                            <span id="rolltext">News<br />
+                                Games<br />
+                                NewsPaper<br />
+                                <span id="spare-time">News</br> Quiz</br> Weather </br> Suduko </br> Enjoy...</span><br />
+                        </div>
+                    </h4>
+                </a>
+
+
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <div class="search-bar flex">
+
+                        <input id="search-text" type="text" class="news-input" placeholder=" &#128269;Search "
+                            style="width: 360px;">
+                        <button id="search-button" class="search-button">Search</button>
+                    </div>
+                    <!-- <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">Sports</li> -->
+                    <!-- <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('technology')">technology</li> -->
+                    <li class="hover-link nav-item"><a href="monthly_magzine.html"> Magazines</a></li>
+                    <li class="hover-link nav-item"><a href="Newpaper.html ">NewsPaper</a></li>
+                    <!-- <li class="hover-link nav-item"><a href="quiz.html">Quiz</a></li> -->
+        <li class="hover-link nav-item" id="dropdown" onclick="toggleDropdown1()"><span class="Categories">States</span>
+
+        <ul class="dropdown-state" id="dropdownStates" >
+
+            <div  id="state-div">
+
+            <div style="display: flex;" class="state-div1">
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('andhra pradesh')"><a>Andhra Pradesh</a></li>
+            <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('arunachal pradesh')"><a>Arunachal Pradesh</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('assam')"><a>Assam</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('bihar')"><a>Bihar</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('chhattisgarh')"><a>Chhattisgarh</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('india-goa')"><a>Goa</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('gujarat')"><a>Gujarat</a></li>
+            </div>
+
+            <div style="display: flex;" class="state-div1">
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('india-haryana')"><a>Haryana</a></li>
+             <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('himachal pradesh')"><a>Himachal Pradesh</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('jharkhand')"><a>Jharkhand</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('karnataka')"><a>Karnataka</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('kerala')"><a>Kerala</a></li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('madhya pradesh')"><a>Madhya Pradesh</a></li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('maharashtra')"><a>Maharashtra</a></li>
+
+            </div>
+                        
+            <div style="display: flex;" class="state-div1">
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('manipur')"><a>Manipur</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('meghalaya')"><a>Meghalaya</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('mizoram')"><a>Mizoram</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('nagaland')"><a>Nagaland</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('odisha')"><a>Odisha</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('punjab')"><a>Punjab</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('rajasthan')"><a>Rajasthan</a></li>
+
+            </div>
+            <div style="display: flex;" class="state-div1">
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('sikkim')"><a>Sikkim</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('tamil nadu')"><a>Tamil Nadu</a></li>
+                 <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('telangana')"><a>Telangana</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('tripura')"><a>Tripura</a></li>
+            <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('uttar pradesh')"><a>Uttar Pradesh</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('uttarakhand')"><a>Uttarakhand</a></li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('west bengal')"><a>West Bengal</a></li>
+
+            </div>
+        </div>
+                       
+                        
+        </ul>
+                </li>
+                    
+                    <li class="hover-link nav-item" id="dropdown" onclick="toggleDropdown()"><span
+                            class="Categories">Games</span>
+                        <ul class="dropdown-content" id="dropdownContent">
+                            <li><a href="quiz.html">Quiz</a></li>
+                            <li><a href="suduko.html">Suduko</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+
+
+
+
+            <div>
+                <div class="weather-container" id="weather-container"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Block news  -->
+    <div class="news-container">
+        <div class="title">
+            Breaking News
+        </div>
+
+        <ul id="news-list">
+            <!-- News items will be dynamically added here -->
+        </ul>
+    </div>
+
+
+
+
+    <!-- latest-News Block -->
+    <div class="latest-news-container">
+        <div class="latest-news-heading">
+            Latest News
+        </div>
+        <div id="latest-news-list">
+            <!-- Latest news items will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="lol">
+
+        <div class="slider-container">
+            <div id="slider" class="slider"></div>
+            <div class="slider-nav">
+                <button onclick="prevSlide()" style="border-radius: 43px;"><span style="font-size: 24px">&#8592</span></button>
+                <button onclick="nextSlide()" ><span style="font-size: 24px">&#8594;</span></button>
+            </div>
+        </div>
+
+
+
+        <!-- TOP-NEWS-CONTAINER  -->
+
+        <div class="latest-news-container" id="state-news-container">
+            <h2 class="latest-news-heading">Uttar Pradesh News</h2>
+            <ul id="state-news-list"></ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- LOADER CONTAINER -->
+
+        <div id="loader" class="loader-container">
+            <div class="loader"></div>
+        </div>
+
+        <main>
+            <div class="cards-container container flex" id="cards-container">
+
+            </div>
+        </main>
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione
+                        cumque!</p>
+
+                    <button class="btn btn-like green" id="green"><i class="fa fa-thumbs-up fa-lg"
+                            aria-hidden="true"></i></button>
+                    <button class="btn btn-like red" id="red"><i class="fa fa-thumbs-down fa-lg"
+                            aria-hidden="true"></i></button>
+
+                </div>
+
+        </template>
+
+        <script src="script.js"></script>
+        <script src="https://use.fontawesome.com/fe459689b4.js"></script>
+        <script src="suduko.js"></script>
+        <!-- <script src="slider.js"></script> -->
+</body>
+
+</html>
